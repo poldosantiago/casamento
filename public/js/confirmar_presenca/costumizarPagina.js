@@ -2,7 +2,7 @@ import util from './../comum/utilidades.js'
 import service from './../comum/convidadoService.js'
 
 //costumizando página dependendo do nubente
-addEventListener('DOMContentLoaded',carregarPagina());
+//addEventListener('DOMContentLoaded',carregarPagina());
 
 //busca os dados do cliente e insere o nome dele no HTML
 carregarConvidado(); 
