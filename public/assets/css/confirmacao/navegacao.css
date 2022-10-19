@@ -27,25 +27,8 @@
 	font-size: 0.9rem;
 }
 
-.navegacao__link.--noivo{
-	background-color: var(--cor-noivo-mais-escuro);
-}
-
-.navegacao__link.--noiva{
-	background-color: var(--cor-noiva-saturado);
-}
-
-.navegacao__link > span{
-	margin-right: 0.5rem;
-}
-
-.navegacao__link:hover.--noivo{
-	color: var(--cor-dourado);
-	background-color: var(--cor-preto);
-}
-
-.navegacao__link:hover.--noiva{
-	background-color: var(--cor-dourado);
+.navegacao__link:hover{
+	background-color: var(--cor-azul-marinho);
 }
 
 /*Medias*/
