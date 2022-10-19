@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Confirmação</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/base/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/base/icones-google.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/confirmacao/pagina.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/confirmacao/area_confirmacao.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/confirmacao/formulario.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@100;300;400&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="pagina" data-mudanca>	
+	<main>
+		<section class="area_confirmacao">
+			<div class="area_confirmacao__ilustracao" data-mudanca></div>
+			<h2 class="area_confirmacao__titulo">Bem vindo<span data-nome-convidado></span>!</h2>
+			<p class="area_confirmacao__texto">Por favor, preencha as informações</p>
+			
+			<form class="formulario">
+				<fieldset>
+					<legend class="formulario__legenda">Informações básicas</legend>
+										
+					<div class="formulario__container">
+						<input type="text" class="formulario__input" placeholder="nome" data-tipo="nome" required>
+						<label class="formulario__label" for="nome">Nome</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>
+
+					<div class="formulario__container">
+						<input type="text" class="formulario__input" placeholder="email" data-tipo="email" required>
+						<label class="formulario__label" for="email">Email</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>
+
+					<div class="formulario__container">
+						<input type="tel" class="formulario__input" placeholder="telefone" data-tipo="telefone" required>
+						<label class="formulario__label" for="telefone">Telefone</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>					
+				</fieldset>
+
+				<fieldset>
+					<legend class="formulario__legenda">Acompanhantes</legend>
+					<div class="formulario__container">
+						<input type="number" min="0" max="10" class="formulario__input" placeholder="quantos adultos" data-tipo="adultos" required>
+						<label class="formulario__label" for="qtdAdultos">Quantos adultos?</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>	
+					<div class="formulario__container">
+						<input type="number" min="0" max="10" class="formulario__input" placeholder="quantas crianças" data-tipo="criancas" required>
+						<label class="formulario__label" for="qtdAdultos">Quantas crianças?</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>				
+				</fieldset>
+
+				<fieldset>
+					<legend class="formulario__legenda">Dados do carro</legend>
+					
+					<div class="formulario__container">
+						<input type="text" class="formulario__input" placeholder="modelo do carro" data-tipo="modelo" required>
+						<label class="formulario__label" for="modelo">Modelo</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>	
+					<div class="formulario__container">
+						<input type="text" class="formulario__input" placeholder="cor do carro" data-tipo="cor" required>
+						<label class="formulario__label" for="cor">Cor</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>	
+					<div class="formulario__container">
+						<input type="text" class="formulario__input" placeholder="placa do carro" data-tipo="placa" required>
+						<label class="formulario__label" for="placa">Placa</label>
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>				
+				</fieldset>			
+				<button class="formulario__botao" data-mudanca data-botao type="button">Cadastrar</a>	
+			</form>
+		</section>
+	</main>
+	
+	<!--campo de alerta - a tag entra dinamicamente-->
+	<div class="area-alerta" data-alerta>
+
+	</div>
+	
+</body>
+
+</html>
+
+<!-- <script type="module" src="js/confirmar_presenca/costumizarPagina.js"></script> -->
+<script type="module" src="js/confirmar_presenca/app.js"></script>
+
+
+

@@ -1,0 +1,42 @@
+.area-alerta{
+  position: absolute;
+  bottom: 80%;  
+  left: 50%; 
+}
+
+.alerta__alerta {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 1rem;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: all 2s;
+}
+
+.alerta__alerta.--sumindo{
+  opacity: 0.0;
+  transform: translate(-50%, -0%);
+}  
+
+.alerta__btn-fechar {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alerta__btn-fechar:hover {
+  color: black;
+}
+
+
+
+
+/*
+fonte: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_alert;
+*/

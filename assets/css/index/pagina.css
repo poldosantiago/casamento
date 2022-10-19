@@ -1,0 +1,27 @@
+.pagina{
+	width: 100vw;
+	height: 90vh;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: var(--cor-azul-convite);
+}
+
+@media screen and (min-width: 0){
+	.pagina{
+		height: 92vh;
+
+	}
+	
+}	
+
+@media screen and (min-width: 1024px){
+	.pagina{
+		height: 100vh;
+
+	}
+
+}	

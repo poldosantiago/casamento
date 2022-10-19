@@ -1,0 +1,44 @@
+.img-fundo{
+	position: absolute;
+	z-index: 2;
+}
+
+.img-fundo.--noroeste{
+	background-image: url('../../img/fundo/flor-rosa.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: contain;
+	top: 0;
+	left: 0;
+	/*width: 400px;*/
+	
+}	
+
+.img-fundo.--sudeste{
+	background-image: url('../../img/fundo/flor-rosa2.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: contain;
+	bottom: 0;
+	right: 0;
+
+	/*width: 400px;*/
+}
+
+
+@media screen and (min-width: 0){
+	.img-fundo{
+		width: 30vw;
+		height: 30vh;
+	}
+	
+}	
+
+@media screen and (min-width: 1024px){
+.img-fundo{
+		width: 65vw;
+		height: 65vh;
+	}
+
+}	
+

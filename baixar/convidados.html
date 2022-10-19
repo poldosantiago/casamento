@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baixar convidados</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="module">
+    import service from './../js/comum/convidadoService.js'
+    import baixar from './../js/comum/baixarCSV.js'
+
+    let convidados = await service.listarConvidados();
+    let camposTabela = ['id','nome','email','telefone','adultos','criancas','modelo','cor','placa'];
+
+    let conteudo = baixar.converterJSONparaCSV(convidados,camposTabela);
+    //console.log(conteudo);
+
+    baixar.fazerDownloadArquivo(conteudo,'convidados.csv');
+
+</script>
+
+<!-- 
+fonte:
+https://acervolima.com/como-converter-csv-para-arquivo-json-e-vice-versa-em-javascript/
+http://devblog.drall.com.br/como-gerar-um-arquivo-simples-para-donwload-no-browser-usando-javascript#:~:text=Para%20um%20txt%2C%20basta%20colocar,funcion%C3%A1r%C3%A1%20em%20todos%20os%20browser.
+-->

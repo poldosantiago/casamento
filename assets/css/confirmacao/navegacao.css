@@ -1,0 +1,75 @@
+.navegacao{
+
+}
+
+.navegacao__lista{
+	display: flex;
+	justify-content: center;
+
+}
+
+
+
+.navegacao__item:last-child{
+	margin-right: 0rem;
+}
+
+.navegacao__link{
+	color: var(--cor-branco);
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--cor-azul-bebe);
+	border-radius: 5px;	
+	padding:0.8rem 1rem;
+	transition: all 0.1s;
+	font-size: 0.9rem;
+}
+
+.navegacao__link.--noivo{
+	background-color: var(--cor-noivo-mais-escuro);
+}
+
+.navegacao__link.--noiva{
+	background-color: var(--cor-noiva-saturado);
+}
+
+.navegacao__link > span{
+	margin-right: 0.5rem;
+}
+
+.navegacao__link:hover.--noivo{
+	color: var(--cor-dourado);
+	background-color: var(--cor-preto);
+}
+
+.navegacao__link:hover.--noiva{
+	background-color: var(--cor-dourado);
+}
+
+/*Medias*/
+@media(min-width: 300px){
+	.navegacao__lista{
+		flex-direction: column;
+	}
+
+	.navegacao__item{
+		margin: 0rem 0.5rem;
+		width: 100%;
+		margin-top: 0.8rem;
+	}
+}
+
+@media(min-width: 800px){
+	.navegacao__lista{
+		flex-direction: row;
+	}
+
+	.navegacao__item{
+		margin: 0rem 0.5rem;
+		width: 30%;
+	}
+}
+	
+}

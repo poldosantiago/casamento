@@ -1,0 +1,59 @@
+.area_confirmacao{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--cor-branco);
+	border-radius: 10px;
+	box-shadow: var(--sombra);
+	padding: 1rem;
+}
+
+.area_confirmacao__titulo{
+	font-size: 3rem;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+
+.area_confirmacao__texto{
+	text-align: center;
+	font-size: 1.0rem;
+	margin-bottom: 0.8rem;
+}
+
+.area_confirmacao__texto.--pouco_maior{
+	font-size: 1.5rem;
+}
+
+.area_confirmacao__ilustracao{
+	height: 15rem;
+	width: 15rem;
+	align-self: center;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+
+	background-image: url('./../../img/confirmacao/casal.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.area_confirmacao__ilustracao.--encerramento{
+	width: 25rem;
+	background-size: contain;
+	background-image: url('./../../img/confirmacao/encerramento.png');
+}
+
+
+@media(min-width: 300px){
+	.area_confirmacao{
+		width: 400px;
+		margin: 3rem 0;
+	}
+}
+
+@media(min-width: 800px){
+	.area_confirmacao{
+		width: 800px;
+		margin: 5rem 0;
+	}
+}

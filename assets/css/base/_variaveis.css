@@ -1,0 +1,41 @@
+:root{
+	/*cores*/
+	--cor-branco: #FFFFFF;
+	--cor-preto: #000000;
+
+	--cor-dourado: #DAA520;
+	--cor-dourado-escuro: #b8860b;
+	--cor-preto: #000;
+
+	--cor-cinza-claro: #A9A9A9;
+	--cor-cinza: #808080;
+	--cor-cinza-escuro: #4f5355;
+	--cor-cinza-mais-escuro: #2c2d2f;
+
+	--cor-azul-bebe: #1889b7;
+	--cor-azul-marinho: #06386d;
+	--cor-azul-convite: #bfeff1;
+
+
+	--cor-aviso-erro: red;
+
+	--cor-noiva:#fcd7d6;
+	--cor-noiva-saturado:#ffcecb;
+	--cor-noiva-desaturado:#fad7d6;
+
+	--cor-noivo: var(--cor-cinza);
+	--cor-noivo-claro: var(--cor-cinza-claro);
+	--cor-noivo-escuro: var(--cor-cinza-escuro);
+	--cor-noivo-mais-escuro: var(--cor-cinza-mais-escuro);
+
+	/* fontes */
+	--fonte-nome-noivos: 'Alex Brush';
+	--fonte-padrao: 'Montserrat';
+	--fonte-formulario: 'Petit Formal Script';
+
+
+	--sombra: 0 5px 10px #55a6ff38;
+}	
+
+
+

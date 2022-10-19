@@ -1,0 +1,25 @@
+.nome-pais{
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 0){
+	.nome-pais{
+		font-size: 0.65rem;
+		margin-bottom: 3rem;
+	}
+
+.nome-pais__item{
+		margin-bottom: 0.2rem;
+}
+}	
+
+@media screen and (min-width: 1024px){
+	.nome-pais{
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+}	

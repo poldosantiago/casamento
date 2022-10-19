@@ -1,0 +1,18 @@
+
+html{
+	min-height: 100%;
+}
+
+body.pagina{
+	font-family: var(--fonte-padrao);
+	color: var(--cor-cinza-mais-escuro);
+
+	background: rgb(230,198,232);
+	background: linear-gradient(0deg, rgba(230,198,232,1) 0%, rgba(168,168,255,1) 77%);
+
+}
+
+body.pagina main{
+	display: flex;
+	justify-content: center;
+}
