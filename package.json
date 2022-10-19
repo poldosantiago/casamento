@@ -1,0 +1,19 @@
+{
+  "name": "casamento",
+  "version": "1.0.0",
+  "description": "site para confirmar a presença dos cnvidados",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poldosantiago/casamento.git"
+  },
+  "author": "Leopoldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poldosantiago/casamento/issues"
+  },
+  "homepage": "https://github.com/poldosantiago/casamento#readme"
+}
