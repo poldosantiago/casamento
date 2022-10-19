@@ -2,7 +2,7 @@
   "name": "casamento",
   "version": "1.0.0",
   "description": "site para confirmar a presença dos cnvidados",
-  "main": "index.html",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/poldosantiago/casamento/issues"
   },
-  "homepage": "https://github.com/poldosantiago/casamento#readme"
+  "homepage": "https://github.com/poldosantiago/casamento#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

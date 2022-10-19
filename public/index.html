@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="convite">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width"><!--necessário para ficar responsivo-->
+
+	<!-- css site -->
+	<link rel="stylesheet" type="text/css" href="assets/css/base/base.css">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/index/pagina.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index/img-fundo.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index/painel.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index/nome-pais.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index/formulario.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index/area-alerta.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@100;300;400&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+	
+	<title>Casamento</title>
+</head>
+
+<body>
+	<main class="pagina">
+		<!-- imagens de fundo -->
+		<div class="img-fundo --noroeste"></div>
+		<div class="img-fundo --sudeste"></div>
+
+		<section class="painel">
+			<p class="painel__paragrafo">"Rir com o outro é o maior sintoma do amor"</p>
+
+			<div class="nome-pais">	
+				<ul class="nome-pais__lista">
+					<li class="nome-pais__item">Viviane Aparecida Fatorusso Guariglia</li>
+					<li class="nome-pais__item">Nicolau Guariglia Junior</li>
+				</ul>
+
+				<ul class="nome-pais__lista">
+					<li class="nome-pais__item">Maria das Graças Santiago de Oliveira</li>
+					<li class="nome-pais__item">Raimundo Oliveira Oliveira</li>
+				</ul>
+			</div>
+
+			<p class="painel__paragrafo">Convidam para a cerimônia dos seus filhos</p>
+
+			<h1 class="painel__nome-noivos">Thaisa e Rafael</h1>
+
+			<p class="painel__paragrafo">A realizar-se no dia 17 de dezembro de 2022, às dez horas e trinta minutos, no Santuário Bom Jesus dos Perdões</p>
+			<p class="painel__paragrafo">Após a cerimôninia, os convidados serão recepcionados no Condomínio Vale do Sol - Rua Sorocaba, 10</p>
+
+			<p class="painel__paragrafo">Por favor, confirme sua presença</p>
+
+			<form class="formulario">
+				<input type="text" class="formulario__input" placeholder="Digite seu nome completo" data-nome-completo>
+				<button class="formulario__botao" type="button" data-btn-confirmar-presenca>Confirmar</button>
+			</form>
+
+		</section>		
+	</main>
+
+	<!--campo de alerta - a tag entra dinamicamente-->
+	<div class="area-alerta" data-alerta>
+
+	</div>
+</body>
+</html>
+
+<script type="module" src="js/index/app.js"></script>
