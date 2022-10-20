@@ -58,20 +58,30 @@
 				</fieldset>
 
 				<fieldset>
-					<legend class="formulario__legenda">Dados do carro</legend>
+					<legend class="formulario__legenda">Dados adicionais</legend>
 					
 					<div class="formulario__container">
-						<input type="text" class="formulario__input" placeholder="modelo do carro" data-tipo="modelo" required>
+						<p class="formulario__paragrafo_radio">Vai de carro?</p>
+						<input type="radio" id="sim" name="carro" value="SIM" data-tipo="radio_carro">
+  						<label for="sim">Sim</label>
+						<input type="radio" id="nao" name="carro" value="NAO" data-tipo="radio_carro">
+  						<label for="sim">Não</label>
+
+                        <span class="formulario__mensagem_erro">Este campo não está válido</span>
+					</div>
+
+					<div class="formulario__container --oculto" data-campo_oculto="modelo">
+						<input type="text" class="formulario__input" placeholder="modelo do carro" required>
 						<label class="formulario__label" for="modelo">Modelo</label>
                         <span class="formulario__mensagem_erro">Este campo não está válido</span>
 					</div>	
-					<div class="formulario__container">
-						<input type="text" class="formulario__input" placeholder="cor do carro" data-tipo="cor" required>
-						<label class="formulario__label" for="cor">Cor</label>
+					<div class="formulario__container --oculto" data-campo_oculto="condutor">
+						<input type="text" class="formulario__input" placeholder="condutor do carro" required>
+						<label class="formulario__label" for="cor">Condutor do carro</label>
                         <span class="formulario__mensagem_erro">Este campo não está válido</span>
 					</div>	
-					<div class="formulario__container">
-						<input type="text" class="formulario__input" placeholder="placa do carro" data-tipo="placa" required>
+					<div class="formulario__container --oculto" data-campo_oculto="placa">
+						<input type="text" class="formulario__input" placeholder="placa do carro" required>
 						<label class="formulario__label" for="placa">Placa</label>
                         <span class="formulario__mensagem_erro">Este campo não está válido</span>
 					</div>				

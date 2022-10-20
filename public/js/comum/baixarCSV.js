@@ -1,9 +1,9 @@
 const converterJSONparaCSV = (objArray, keys) => [
-        keys.join(';'), ...objArray.map(
-            row => keys.map(k => row[k] || '')
-                .join(';'))].join('\n');
+keys.join(';'), ...objArray.map(
+    row => keys.map(k => row[k] || '')
+    .join(';'))].join('\n');
 
-    function fazerDownloadArquivo(content, filename, contentType){
+function fazerDownloadArquivo(content, filename, contentType){
     if(!contentType){
         contentType = 'application/octet-stream';
     }

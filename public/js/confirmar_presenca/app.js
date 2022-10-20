@@ -14,4 +14,5 @@ inputs.forEach(input => input.addEventListener('blur', evento => validarCampoFor
 let botao = document.querySelector('[data-botao]');
 botao.addEventListener('click', () => submeterFormulario(inputs));
 
-
+let radios = document.querySelectorAll('[data-tipo="radio_carro"]'); //pega os elementos que contem a palavra 'radio_carro'
+radios.forEach(radio => radio.addEventListener('change', evento => validarCampoFormulario(evento.target)));

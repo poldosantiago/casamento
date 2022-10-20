@@ -2,7 +2,7 @@
 browser-sync start --server --files . --host --port 3000 --startPath index.html
 
 #indo para a pasta do projeto ...
-cd ..\..\Projetos\casamento
+cd ..\..\Projetos\casamento\public
 
 ------------------
 

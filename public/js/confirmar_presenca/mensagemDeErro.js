@@ -46,9 +46,9 @@ const mensagemDeErro = {
 		valueMissing: "O campo de modelo não pode estar vazio",
 		customError: "Modelo não é válido"
 	},
-	cor: {
-		valueMissing: "O campo de cep não pode estar vazio",
-		customError: "Cor não é válida"
+	condutor: {
+		valueMissing: "O campo do nome do condutor não pode estar vazio",
+		customError: "Nome do condutor não é válida"
 	},
 	placa: {
 		valueMissing: "O campo de placa não pode estar vazio",

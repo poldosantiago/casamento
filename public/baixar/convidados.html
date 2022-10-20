@@ -13,7 +13,7 @@
     import baixar from './../js/comum/baixarCSV.js'
 
     let convidados = await service.listarConvidados();
-    let camposTabela = ['id','nome','email','telefone','adultos','criancas','modelo','cor','placa'];
+    let camposTabela = ['id','nome','email','telefone','adultos','criancas','modelo','condutor','placa'];
 
     let conteudo = baixar.converterJSONparaCSV(convidados,camposTabela);
     //console.log(conteudo);

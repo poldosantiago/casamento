@@ -21,6 +21,11 @@
 	position: relative;
 }
 
+.formulario__paragrafo_radio{
+	font-size: 20px;
+	margin-bottom: 1rem;
+}
+
 .formulario__input{
 	border: none;
 	border-bottom: 1px solid gray;
@@ -77,6 +82,10 @@
 	margin-top: 0.3rem;
 	padding-left: 0.2rem;
 	color: var(--cor-aviso-erro);
+}
+
+.formulario__container.--oculto{
+	display: none;
 }
 
 /*botão*/

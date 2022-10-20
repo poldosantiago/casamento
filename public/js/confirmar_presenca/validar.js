@@ -5,15 +5,18 @@ import validarTelefone from './validarTelefone.js';
 import validarNomeComum from './validarNomeComum.js';
 import validarPlaca from './validarPlaca.js';
 import mostrarMensagemDeErro from './mensagemDeErro.js';
+import mostrarAreaCamposCarro from './mostrarAreaCamposCarro.js';
 
 
 export function validarCampoFormulario(input){
 	const tipoDeInput = input.dataset.tipo;
 
+	//validando os inputs
 	if(validadores[tipoDeInput]){
 		validadores[tipoDeInput](input);
 	}
 
+	//mostrando ou ocultando a mensagem de erro
 	if(input.validity.valid){
 		input.parentElement.classList.remove('formulario__container--erro');
 	}
@@ -28,15 +31,17 @@ const validadores = {
 	email: input => validarEmail(input),
 	telefone: input => validarTelefone(input),
 	modelo: input => validarNomeComum(input,'modelo'),
-	cor: input => validarNomeComum(input,'cor'),
-	placa: input => validarPlaca(input)
+	condutor: input => validarNomeComum(input,'condutor'),
+	placa: input => validarPlaca(input),
+	radio_carro: input => mostrarAreaCamposCarro(input)
 }
 
 //-----------------------------
 
-//percorre cada input e verifica se está válido
+//percondutorre cada input e verifica se está válido
 function validarFormulario(inputs){
 	let valido = true;
+
 	inputs.forEach(input => {
 		if(!input.validity.valid){
 			valido = false;
@@ -45,7 +50,7 @@ function validarFormulario(inputs){
 	return valido;
 }
 
-function criarObjetoConvidado(id,nubente){
+function criarObjetoConvidado(){
 	return {
 			"nome": "",
 			"email": "",
@@ -53,7 +58,7 @@ function criarObjetoConvidado(id,nubente){
 			"adultos": 0,
 			"criancas": 0,
 			"modelo": "",
-			"cor": "",
+			"condutor": "",
 			"placa": ""
 		};	
 }
@@ -65,7 +70,7 @@ const tiposDeCampos = [
 	'criancas',
 	'adultos',
 	'modelo',
-	'cor',
+	'condutor',
 	'placa'
 ];
 
@@ -97,7 +102,6 @@ export async function submeterFormulario(inputs){
 		//última checagem para verificar se o convidado já está cadastrado
 		let testeConvidado = await service.buscarConvidado("nome",convidadoPreenchido.nome); //buscando o convidado recém criado para pegar o id
 		if(testeConvidado.length > 0){
-			console.log('existe porra')
 			window.location.href = `confirmacao_encerramento.html?id=${testeConvidado[0].id}`;
 		}
 		else{//se realmente ele não existe...
