@@ -102,12 +102,12 @@ export async function submeterFormulario(inputs){
 		//última checagem para verificar se o convidado já está cadastrado
 		let testeConvidado = await service.buscarConvidado("nome",convidadoPreenchido.nome); //buscando o convidado recém criado para pegar o id
 		if(testeConvidado.length > 0){
-			window.location.href = `confirmacao_encerramento.html?id=${testeConvidado[0].id}`;
+			window.location.href = `confirmacao_encerramento.html?id=${testeConvidado[0]._id}`;
 		}
 		else{//se realmente ele não existe...
 			await service.cadastrarConvidado(convidadoPreenchido); //insere os dados no banco
 			convidadoPreenchido = await service.buscarConvidado("nome",convidadoPreenchido.nome); //buscando o convidado recém criado para pegar o id
-			window.location.href = `confirmacao_encerramento.html?id=${convidadoPreenchido[0].id}`;
+			window.location.href = `confirmacao_encerramento.html?id=${convidadoPreenchido[0]._id}`;
 		}
 	}
 	else{

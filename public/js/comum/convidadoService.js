@@ -1,3 +1,11 @@
+async function buscarConvidadoPorId(id){
+	return fetch(`https://casamento-backend.herokuapp.com/convidados/${id}`)
+	.then(response => {		
+			return response.json();
+	})
+	throw new Error('Não foi possível encontrar o convidado');
+}
+
 //busca o convidado por qualquer valor do objeto - chamo de parametro
 async function buscarConvidado(parametro,valor){
 	return fetch(`https://casamento-backend.herokuapp.com/convidados/busca?${parametro}=${valor}`)
@@ -34,6 +42,7 @@ function cadastrarConvidado(convidado){
 
 const service = {
 	buscarConvidado,
+	buscarConvidadoPorId,
 	cadastrarConvidado,
 	listarConvidados
 }

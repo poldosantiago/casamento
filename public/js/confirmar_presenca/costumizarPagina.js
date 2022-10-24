@@ -20,8 +20,8 @@ function costumizarPagina(){
 
 async function carregarConvidado(){
 	const idConvidado = util.pegarParametroPagina('id');
-	const convidado = await service.buscarConvidado("id",idConvidado);
-	inserirConvidadoHTML(convidado[0]);
+	const convidado = await service.buscarConvidadoPorId(idConvidado);
+	inserirConvidadoHTML(convidado);	
 }
 
 function inserirConvidadoHTML(convidado){

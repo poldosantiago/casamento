@@ -19,11 +19,11 @@ function confirmarPresenca(btn){
 
 async function validarConvidado(nome){
 	try {
-		let convidadoEncontrado = await service.buscarConvidado("nome",nome); //solucao antiga
+		let convidadoEncontrado = await service.buscarConvidado("nome",nome);
 		
 		//se achou...
 		if(convidadoEncontrado.length > 0){
-			window.location.href = `confirmacao_encerramento.html?id=${convidadoEncontrado[0].id}`;
+			window.location.href = `confirmacao_encerramento.html?id=${convidadoEncontrado[0]._id}`;
 		}
 		//se não achou...
 		else{
