@@ -67,8 +67,8 @@ const tiposDeCampos = [
 	'nome',
 	'email',
 	'telefone',
-	'criancas',
 	'adultos',
+	'criancas',
 	'modelo',
 	'condutor',
 	'placa'

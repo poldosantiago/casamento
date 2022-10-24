@@ -12,5 +12,3 @@ function validarNomeComum(input,tipoDoNome){
 }
 
 export default validarNomeComum;
-
-//console.log(verificarNomeComum('azul marinho'))

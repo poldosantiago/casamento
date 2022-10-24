@@ -19,7 +19,7 @@ function confirmarPresenca(btn){
 
 async function validarConvidado(nome){
 	try {
-		let convidadoEncontrado = await service.buscarConvidado("nome",nome);
+		let convidadoEncontrado = await service.buscarConvidado("nome",nome); //solucao antiga
 		
 		//se achou...
 		if(convidadoEncontrado.length > 0){
