@@ -43,17 +43,17 @@
 	background-image: url('./../../img/confirmacao/encerramento.png');
 }
 
-
-@media(min-width: 300px){
+@media screen and (min-width: 320px){
 	.area_confirmacao{
-		width: 400px;
+		width: 320px;
 		margin: 3rem 0;
 	}
 }
 
-@media(min-width: 800px){
+@media screen and (min-width: 800px){
 	.area_confirmacao{
 		width: 800px;
 		margin: 5rem 0;
 	}
 }
+
