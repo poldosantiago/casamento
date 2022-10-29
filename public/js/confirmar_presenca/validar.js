@@ -3,6 +3,7 @@ import service from './../comum/convidadoService.js';
 import validarEmail from './validarEmail.js';
 import validarTelefone from './validarTelefone.js';
 import validarNomeComum from './validarNomeComum.js';
+import validarModeloCarro from './validarModeloCarro.js';
 import validarPlaca from './validarPlaca.js';
 import mostrarMensagemDeErro from './mensagemDeErro.js';
 import mostrarAreaCamposCarro from './mostrarAreaCamposCarro.js';
@@ -30,7 +31,7 @@ const validadores = {
 	nome: input => validarNomeComum(input),
 	email: input => validarEmail(input),
 	telefone: input => validarTelefone(input),
-	modelo: input => validarNomeComum(input,'modelo'),
+	modelo: input => validarModeloCarro(input),
 	condutor: input => validarNomeComum(input,'condutor'),
 	placa: input => validarPlaca(input),
 	radio_carro: input => mostrarAreaCamposCarro(input)

@@ -14,7 +14,7 @@ function pegarPrimeiroNomeFormatado(nome){
 
 function validarNome(nome){
 	nome = nome.trim(); //remove espaço dos lados
-	const regex = new RegExp(/^[a-zA-ZÁÉÍÓÚÃÕÊÇáéíóúãêç]+(([\'\,\.\- ][a-zA-ZÁÉÍÓÚÃÕÊÇáéíóúãêç])?[a-zA-ZÁÉÍÓÚÃÕÊÇáéíóúãêç]*)*$/,'g'); // valida nome próprio
+	const regex = new RegExp(/^[a-zA-ZÁÉÍÓÚÃÕÊËÇáéíóúãêëç]+(([\'\,\.\- ][a-zA-ZÁÉÍÓÚÃÕÊËÇáéíóúãêëç])?[a-zA-ZÁÉÍÓÚÃÕÊËÇáéíóúãêëç]*)*$/,'g'); // valida nome próprio
 	return regex.test(nome);
 }
 
