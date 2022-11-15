@@ -42,12 +42,10 @@
 	background-color: var(--cor-azul-marinho);
 }	
 
-
-
 @media screen and (min-width: 0){
 	.formulario__input{
-		width: 20rem;
-		font-size: 1rem;
+		width: 13.5rem;
+		font-size: .95rem;
 	}
 
 
